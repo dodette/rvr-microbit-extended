@@ -1,9 +1,8 @@
-//% weight=100 color=#C28DF0 icon="\uf120" block="RVR Extensions"
 namespace sphero {
-    //% block="Drive to position ( %x|m, %y|m ) at speed %speed| and face heading %heading|"
+    //% block="Drive to ( %x|m, %y|m ) at speed %speed| with heading %heading|"
     //% speed.min=0 speed.max=2
     //% heading.min=0 heading.max=359
-    //% subcategory=Movement
+    //% subcategory=Extension
     export function driveToPosition(heading: number, x: number, y: number, speed: number): void {
         // For other drive functions, the flag 0x01 is used to indicate reverse. It is not needed
         // to drive to an internal reference position
