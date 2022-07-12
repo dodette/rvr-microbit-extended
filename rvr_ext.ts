@@ -1,4 +1,4 @@
-namespace sphero {
+/* namespace sphero {
     //% block="drive to ( %x|m, %y|m ) at speed %speed| with heading %heading|"
     //% speed.min=0 speed.max=2
     //% heading.min=0 heading.max=359
@@ -41,4 +41,4 @@ namespace sphero {
 
         serial.writeBuffer(pins.createBufferFromArray(apiMessage.messageRawBytes));
     }
-}
+} */
