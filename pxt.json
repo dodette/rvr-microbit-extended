@@ -11,7 +11,9 @@
         "utilities.ts",
         "rvr.ts",
         "constants.ts",
-        "message.ts"
+        "message.ts",
+        "rvr_ext.ts",
+        "constants_ext.ts"
     ],
     "testFiles": [
         "test.ts"
