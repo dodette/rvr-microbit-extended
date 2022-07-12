@@ -1,5 +1,5 @@
 namespace sphero {
-    //% block="Drive to ( %x|m, %y|m ) at speed %speed| with heading %heading|"
+    //% block="drive to ( %x|m, %y|m ) at speed %speed| with heading %heading|"
     //% speed.min=0 speed.max=2
     //% heading.min=0 heading.max=359
     //% subcategory=Extension
@@ -23,6 +23,20 @@ namespace sphero {
             DriveCommands.driveDeviceId,
             DriveCommandsExt.driveToPositionSI,
             messageData
+        );
+
+        serial.writeBuffer(pins.createBufferFromArray(apiMessage.messageRawBytes));
+    }
+
+    //% block="reset inertial measurement unit"
+    //% subcategory=Extension
+    export function resetLocatorXY(): void {
+        let apiMessage = buildApiCommandMessageWithDefaultFlags(
+            ApiTargetsAndSources.robotStTarget,
+            ApiTargetsAndSources.serviceSource,
+            SensorCommandsExt.sensorDeviceId,
+            SensorCommandsExt.resetLocatorXY,
+            null
         );
 
         serial.writeBuffer(pins.createBufferFromArray(apiMessage.messageRawBytes));
