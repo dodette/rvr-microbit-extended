@@ -1,11 +1,7 @@
 {
-    "name": "Sphero Extended",
-    "description": "",
-    "dependencies": {
-        "core": "*",
-        "radio": "*",
-        "microphone": "*"
-    },
+    "name": "SpheroRVR",
+    "version": "1.0.0",
+    "description": "Sphero RVR SDK to use with micro:bit to control a Sphero RVR Robot.",
     "files": [
         "README.md",
         "utilities.ts",
@@ -13,15 +9,13 @@
         "constants.ts",
         "message.ts"
     ],
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
     "testFiles": [
         "test.ts"
     ],
-    "targetVersions": {
-        "target": "5.0.13",
-        "targetId": "microbit"
-    },
-    "supportedTargets": [
-        "microbit"
-    ],
-    "preferredEditor": "blocksprj"
+    "public": true,
+    "preferredEditor": "tsprj"
 }
